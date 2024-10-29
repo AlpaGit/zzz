@@ -5,7 +5,7 @@
     .dependencies = .{
         .tardy = .{
             .url = "git+https://github.com/alpagit/tardy",
-            .hash = "122049fe7aebf3ef0802138ac8de509f1e305123d44d0cf1a2e303f5779d8a9ff5a3",
+            .hash = "12206711310443d8602f3d5959d963db8de66b6a064bb30d5a0f0c88ec6aa554eb15",
         },
         .bearssl = .{
             .url = "https://github.com/mookums/bearssl-zig/archive/37a96eee56fe2543579bbc6da148ca886f3dd32b.tar.gz",
