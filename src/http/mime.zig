@@ -241,7 +241,7 @@ pub const Mime = struct {
 };
 
 const all_mime_types = blk: {
-    const decls = @typeInfo(Mime).Struct.decls;
+    const decls = @typeInfo(Mime).@"struct".decls;
     var mimes: [decls.len]Mime = undefined;
     var index: usize = 0;
     for (decls) |decl| {
