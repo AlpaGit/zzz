@@ -36,6 +36,7 @@ pub fn build(b: *std.Build) void {
     add_example(b, "multithread", .http, false, target, optimize, zzz);
     add_example(b, "benchmark", .http, false, target, optimize, zzz);
     add_example(b, "valgrind", .http, true, target, optimize, zzz);
+    add_example(b, "basic", .ws, false, target, optimize, zzz);
 
     const tests = b.addTest(.{
         .name = "tests",
@@ -52,6 +53,7 @@ pub fn build(b: *std.Build) void {
 
 const Protocol = enum {
     http,
+	ws
 };
 
 fn add_example(
